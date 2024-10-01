@@ -157,7 +157,7 @@
 				<script defer async>
 					document.write('<p>' + tablica + '</p>')
 					//Dodajemy elementy
-					tablica[6] = "nowy6"
+					tablica[5] = "nowy6";
 					tablica[tablica.length] = 'nowy7';
 					document.write('<p>' + tablica + '</p>')
 					//Dodawanie paru elementów na raz
@@ -200,9 +200,15 @@
 
 					document.write('<p> Połowa elementow tablicy przy pomocy while <br> </p>')
 					let i = 0;
+					document.write('<b>petla while</b>')
 					while (i < tablica.length / 2) {
 						document.write('<p>' + tablica[i] + '</p>')
 						i++
+					}
+					let nadmiar = i;
+					document.write('<b>petla for</b>')
+					for (i = 0; i < tablica.length / 2; i++) {
+						document.write('<p>' + tablica[i + nadmiar] + '</p>')
 					}
 
 
