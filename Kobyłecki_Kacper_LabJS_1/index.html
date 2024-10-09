@@ -36,50 +36,38 @@
 	];
 
 	function testQuestion(answer, i) {
-		alert(i)
-		if(q === 0) {
-			if (answer === questions[0][1]) {
-				score++;
-				q++
-				i--;
-			}
-			if (q > 0){
-				if (answer === questions[i][1]) {
-					score++;
-				}
-			}
+		if (answer === questions[i][1]) {
+			score++;
 		}
 	}
 
-	let i = 1
+	let i = 0; // Rozpoczynamy od pierwszego pytania
 	function pokazNastepnePytanie(){
-		if(i === questions.length){
-			koniecQuiz()
-		}
-		else{
-			let odpowiedz = document.getElementById("Odpowiedz").value
-			testQuestion(odpowiedz, i)
-			document.getElementById("Pytanie").innerHTML = questions[i][0]
-			i++;
-		}
+		let odpowiedz = document.getElementById("Odpowiedz").value;
+		testQuestion(odpowiedz, i);
+		i++; // Przechodzimy do następnego pytania
 
+		if(i === questions.length){
+			koniecQuiz();
+		} else {
+			document.getElementById("Pytanie").innerHTML = questions[i][0];
+			document.getElementById("Odpowiedz").value = ''; // Czyścimy pole odpowiedzi
+		}
 	}
+
 	function koniecQuiz(){
-		let message = 'Liczba punktów: ' + score;
-		message += ' z ' + questions.length;
-		message += '.';
-		document.getElementById("Pytanie").innerHTML = message
-		document.getElementById("Odpowiedz").style.display = "none"
-		document.getElementById("Dalej").style.display = "none"
-		//document.write('<p>' + message + '</p>');
+		let message = 'Liczba punktów: ' + score + ' z ' + questions.length + '.';
+		document.getElementById("Pytanie").innerHTML = message;
+		document.getElementById("Odpowiedz").style.display = "none";
+		document.getElementById("Dalej").style.display = "none";
 	}
 
 	function rozpocznijQuiz() {
-		document.getElementById("start").style.display = "none"
-		document.getElementById("Pytanie").style.display = ""
-		document.getElementById("Pytanie").innerHTML = questions[0][0]
-		document.getElementById("Odpowiedz").style.display = ""
-		document.getElementById("Dalej").style.display = ""
+		document.getElementById("start").style.display = "none";
+		document.getElementById("Pytanie").style.display = "";
+		document.getElementById("Pytanie").innerHTML = questions[0][0];
+		document.getElementById("Odpowiedz").style.display = "";
+		document.getElementById("Dalej").style.display = "";
 	}
 
 </script>
