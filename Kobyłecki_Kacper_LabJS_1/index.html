@@ -32,7 +32,11 @@
 		['2+2?', '4'],
 		['3+2?', '5'],
 		['3+3?', '6'],
-		['3+4?', '7']
+		['3+4?', '7'],
+		['Jaki jest najszybszy ptak na świecie?','Sokół wędrowny'],
+		['Ile serc ma ośmiornica?','Trzy'],
+		['Jakie zwierze jest najgłośniejsze na świecie?','Kaszalot spermacetowy'],
+		['Jaki jest jedyny ssak, który naprawdę potrafi latać?','Nietoperz']
 	];
 
 	function testQuestion(answer, i) {
@@ -180,15 +184,10 @@
 		<div class="container">
 			<div class="jumbotron">
 				<h1>Projekt 1</h1>
-
-					<button id="start" onclick="rozpocznijQuiz()">Rozpocznij Quiz</button>
-
+					<button id="start" class="btn btn-primary" onclick="rozpocznijQuiz()">Rozpocznij Quiz</button>
 					<p id="Pytanie" style="display: none">Pytanie</p>
-					<input id="Odpowiedz" style="display: none">
-					<button id="Dalej" style="display: none" onclick="pokazNastepnePytanie()">Następne pytanie</button>
-
-
-
+					<input type="text" id="Odpowiedz" style="display: none; width: 320px; padding-bottom: 8px;" class="form-control">
+					<button id="Dalej" style="display: none; margin-top: 12px;" class="btn btn-primary" onclick="pokazNastepnePytanie()">Następne pytanie</button>
 
 			</div>
 		</div>
