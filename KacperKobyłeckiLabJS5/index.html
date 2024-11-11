@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Programowanie w JAVASCRIPT - template">
+	<meta name="author" content="dr inż. Jacek Paluszak">
+	<link rel="icon" href="img/favicon.ico">
+
+	<title>Programowanie w JAVASCRIPT</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="css/navbar-fixed-top.css" rel="stylesheet">
+	<script src="js/ie-emulation-modes-warning.js"></script>
+
+	<!-- jQuery  -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+	<script src="js/jquery.easing.1.3.min.js"></script>
+	<script src="js/jquery.easing.compatibility.js"></script>
+
+
+</head>
+
+<body>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+					aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/logo512x128.png" height="40" alt=""></a> <a
+					class="navbar-brand logotext" href="#">Laboratorium</a>
+			</div>
+
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#main-page" class="btn btn-primary" title="Strona główna"> <span
+								class="glyphicon glyphicon-home"></span>
+						</a></li>
+					<li><a href="#projekt1">Projekt 1</a></li>
+					<li><a href="#projekt2">Projekt 2</a></li>
+					<li><a href="#form" data-toggle="modal" data-target="#ModalForm">Kontakt</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+							aria-haspopup="true" aria-expanded="false">Opcje <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Akcja 1</a></li>
+							<li><a href="#">Akcja 2</a></li>
+							<li><a href="#">Akcja 3</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown-header">Linki</li>
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+
+	</nav>
+
+	<!-- Main container -->
+	<section id="main-page">
+		<div class="container">
+
+			<div class="jumbotron">
+				<h1>Języki wysokiego poziomu <br> w aplikacjach internetowych</h1>
+				<div class="row">
+					<div class="col-md-2" align="left">
+						<p>nazwisko:</p>
+					</div>
+					<div class="col-md-4">
+						<p>Kowalski</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2" align="left">
+						<p>imię:</p>
+					</div>
+					<div class="col-md-4">
+						<p>Jan</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2" align="left">
+						<p>grupa:</p>
+					</div>
+					<div class="col-md-4">
+						<p>1</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2" align="left">
+						<p>email:</p>
+					</div>
+					<div class="col-md-4">
+						<p>999@student.ans-elblag.pl</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2" align="left">
+						<p>nr indeksu:</p>
+					</div>
+					<div class="col-md-4">
+						<p>999</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!-- /container -->
+
+	<section id="Projekt X">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 1</h1>
+				<!-- Zadanie 1. -->
+				<p>To jest przykład tekstu, który nie będzie cytatem.</p>
+				<span class="pq">"Nie ma problemów nie do rozwiązania. Są tylko problemy, którym poświęciliśmy za mało
+					czasu."</span>
+				<p>To kolejny przykład tekstu, który nie jest cytatem.</p>
+				<span class="pq">"Nie zrażaj się trudnościami, to one czynią nas silniejszymi."</span>
+
+
+				<script>
+					$(document).ready(function () {
+						$('span.pq').each(function () {
+							const quote = $(this).clone();
+							quote.removeClass('pq');
+							quote.addClass('pullquote');
+							$(this).before(quote);
+						}); // koniec funkcji each
+					}); // koniec funkcji ready
+				</script>
+
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<section id="Projekt3">
+		<div class="container">
+			<div class="jumbotron">
+				<!-- Zadanie 2-->
+				<h1>Projekt 3</h1>
+				<script>
+					$(document).ready(function () {
+						$(document).dblclick(function () {
+							alert("Dwukrotnie kliknięto na stronie!");
+						});
+					});
+				</script>
+
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+				<div class="main"></div>
+
+				<script>
+					$(document).ready(function () {
+
+						$('#Projekt3 a').mouseenter(function () {
+							const message = "<p>Wskazałeś odnośnik myszą!</p>";
+							$('.main').append(message);
+						});
+					});
+				</script>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="Projekt4">
+		<div class="container">
+			<div class="jumbotron">
+				<!-- Zadanie 2-->
+				<h1>Projekt 4</h1>
+				<form>
+					<button type="button" id="clickButton">Kliknij mnie</button>
+
+					<script>
+						$(document).ready(function () {
+							$('#clickButton').click(function () {
+								$(this).text("Zostałem kliknięty!");
+							});
+						});
+					</script>
+
+					<script>
+						$(document).ready(function () {
+							for (let i = 1; i <= 10; i++) {
+								$('#Projekt4 form').append(`<button type="button" class="styleButton" data-button-id="${i}">Przycisk ${i}</button>`);
+							}
+
+							$('.styleButton').click(function () {
+								const buttonId = $(this).data('button-id');
+
+								// Wybór losowego elementu z całej strony
+								const randomElement = $('*').eq(Math.floor(Math.random() * $('*').length));
+
+								let changesMade = [];  // Tablica przechowująca zmienione atrybuty
+								let message = `<p>Przycisk ${buttonId} zmienił styl: `;
+
+								// Losowa zmiana atrybutów na elemencie
+								const randomChange = Math.floor(Math.random() * 5);
+
+								// Randomowa zmiana koloru
+								if (randomChange === 0) {
+									randomElement.css('color', getRandomColor());
+									changesMade.push('Kolor');
+								}
+
+								// Zmiana tła
+								if (randomChange === 1) {
+									randomElement.css('background-color', getRandomColor());
+									changesMade.push('Tło');
+								}
+
+								// Zmiana rozmiaru czcionki
+								if (randomChange === 2) {
+									randomElement.css('font-size', Math.floor(Math.random() * 30) + 12 + 'px');
+									changesMade.push('Rozmiar czcionki');
+								}
+
+								// Pogrubienie
+								if (randomChange === 3) {
+									randomElement.css('font-weight', 'bold');
+									changesMade.push('Pogrubienie');
+								}
+
+								// Zmiana obramowania
+								if (randomChange === 4) {
+									randomElement.css('border', '2px solid ' + getRandomColor());
+									changesMade.push('Obramowanie');
+								}
+
+								if (changesMade.length > 0) {
+									message += changesMade.join(', ') + `. Zmieniony element: <strong>${randomElement.prop("tagName")}</strong>.</p>`;
+									$('.main').append(message);
+								}
+
+								$(this).text(`NR. ${buttonId} kliknięty`);
+							});
+
+
+
+							function getRandomColor() {
+								const letters = '0123456789ABCDEF';
+								let color = '#';
+								for (let i = 0; i < 6; i++) {
+									color += letters[Math.floor(Math.random() * 16)];
+								}
+								return color;
+							}
+						});
+					</script>
+
+
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="Projekt5">
+		<div class="container">
+			<div class="jumbotron">
+				<h2>Projekt 5 - Tabela z danymi</h2>
+				<table class="table table-bordered" name="tak">
+					<thead>
+						<tr>
+							<th>Numer</th>
+							<th>Imię</th>
+							<th>Wiek</th>
+							<th>Cytat</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class='test'>
+							<td>0</td>
+							<td name="Jan">Jan</td>
+							<td><input type="number" value="25" style="display: none;" /></td>
+							<td><span class="quote">„Początek jest połową wszystkiego.”</span></td>
+						</tr>
+						<tr name="jeden1">
+							<td>1</td>
+							<td>Agnieszka</td>
+							<td><input type="number" value="30" style="display: none;" /></td>
+							<td><span class="quote">„Ucz się, jakbyś miał żyć wiecznie.”</span></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Marek</td>
+							<td><input type="number" value="35" style="display: none;" /></td>
+							<td><span class="quote">„Nie szukaj łatwych odpowiedzi.”</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section id="Projekt6">
+		<div class="container">
+			<div class="jumbotron">
+				<h2>Projekt 6 - Przyciski do edycji tabeli</h2><br>
+				<button id="button1" class="btn btn-primary mb-2">Zmień kolor wierszy</button>
+				<br><br>
+				<button id="button2" class="btn btn-primary mb-2">Zmniejsz jasność tekstu</button>
+				<br><br>
+				<button id="button3" class="btn btn-primary mb-2">Wyłącz kolumnę Imię, Wiek oraz Cytat</button>
+				<br><br>
+				<button id="button4" class="btn btn-primary mb-2">Wyłącz wszystkie wiersze poza pierwszym</button>
+				<br><br>
+				<button id="button5" class="btn btn-primary mb-2">Pokaż ukryty wiek</button>
+				<br><br>
+				<button id="button6" class="btn btn-primary mb-2">Zmniejsz przezroczystość o połowę dla wszystkich
+					input, ktore mają value zaczynające się od '3'</button>
+				<br><br>
+				<button id="button7" class="btn btn-primary mb-2">Zmniejsz przezroczytosc do 1/3 dla kazdego wierszu,
+					ktorego name konczy sie na '1'</button>
+				<br><br>
+				<button id="button8" class="btn btn-primary mb-2">Zmienia na czerwono wszystkie elementy, ktore w name=
+					" maja słowo "tak"</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="Projekt7">
+		<div class="container">
+			<div class="jumbotron">
+				<h2>Projekt 7 - Filtry jQuery</h2>
+				<button id="filter1" class="btn btn-primary mb-2">Zmień kolor parzystych wierszy</button>
+				<br><br>
+				<button id="filter2" class="btn btn-primary mb-2">Zmniejsz jasność nieparzystych wierszy</button>
+				<br><br>
+				<button id="filter3" class="btn btn-primary mb-2">Wyłącz parzyste wiersze, ktore maja klase
+					test</button>
+				<br><br>
+				<button id="filter4" class="btn btn-primary mb-2">Wyłącz pierwszy wers</button>
+				<br><br>
+				<button id="filter5" class="btn btn-primary mb-2">Wylacz wszystkie wiersze, ktore nie maja klasy
+					test</button>
+				<br><br>
+				<button id="filter6" class="btn btn-primary mb-2">Zmniejsz przezroczystość o połowę dla wszystkich
+					wierszy z elementem "span"</button>
+				<br><br>
+				<button id="filter7" class="btn btn-primary mb-2">Zmniejsz przezroczystosc do 1/3 dla kazdego wiersza
+					zawierajacego 'Jan'</button>
+				<br><br>
+				<button id="filter8" class="btn btn-primary mb-2">Pierwszy i ostatni element</button>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		$(document).ready(function () {
+			$('#button1').click(function () {
+				var row = $('table tbody tr');
+				if (!row.hasClass('changed')) {
+					row.slideDown(500).addClass('changed');
+					$(this).text("Resetuj kolor wierszy").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					row.slideUp(500).removeClass('changed');
+					$(this).text("Zmień kolor wierszy").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#button2').click(function () {
+				var cell = $('tr > td');
+				if (!cell.hasClass('changed')) {
+					cell.fadeTo(1000, 0.5).addClass('changed');
+					$(this).text("Resetuj jasność tekstu").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					cell.fadeTo(1000, 1).removeClass('changed');
+					$(this).text("Zmniejsz jasność tekstu").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#button3').click(function () {
+				var quote = $('td + td');
+				if (!quote.hasClass('changed')) {
+					quote.slideToggle(500).addClass('changed');
+					$(this).text("Resetuj wyłączenie").removeClass('btn-success').addClass('btn-danger');
+				} else {
+					quote.slideToggle(500).removeClass('changed');
+					$(this).text("Wyłącz kolumnę Imię, Wiek oraz Cytat").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#button4').click(function () {
+				var ageCell = $('tr ~ tr');
+				if (!ageCell.hasClass('changed')) {
+					ageCell.fadeToggle(500).addClass('changed');
+					$(this).text("Resetuj wyłączenie").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					ageCell.fadeToggle(500).removeClass('changed');
+					$(this).text("Wyłącz wszystkie wiersze poza pierwszym").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#button5').click(function () {
+				var quote = $('input[type="number"]');
+				if (!quote.hasClass('changed')) {
+					quote.fadeIn(500).addClass('changed');
+					$(this).text("Resetuj pokazywanie wieku").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					quote.fadeOut(500).removeClass('changed');
+					$(this).text("Pokaż ukryty wiek").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#button6').click(function () {
+				var quotes = $('input[value^="3"]');
+				if (!quotes.hasClass('changed')) {
+					quotes.fadeTo(500, 0.5).addClass('changed');
+					$(this).text("Resetuj przezroczystość").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					quotes.fadeTo(500, 1).removeClass('changed');
+					$(this).text("Zmniejsz przezroczystość o połowę dla wszystkich input, ktore mają value zaczynające się od '3' ").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#button7').click(function () {
+				var quotes = $('tr[name$="1"]');
+				if (!quotes.hasClass('changed')) {
+					quotes.fadeTo(500, 0.3).addClass('changed');
+					$(this).text("Resetuj przezroczystosc").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					quotes.fadeTo(500, 1).removeClass('changed');
+					$(this).text("Zmniejsz przezroczytosc do 1/3 dla kazdego wierszu, ktorego name konczy sie na '1'").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#button8').click(function () {
+				var quotes = $('table[name*="tak"]');
+				if (!quotes.hasClass('changed')) {
+					quotes.css('color', 'red').addClass('changed');
+					$(this).text("Resetuj kolor elementów").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					quotes.css('color', '').removeClass('changed');
+					$(this).text("Zmienia na czerwono wszystkie elementy, ktore w 'name= ' maja slowo 'tak'").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+
+
+			$('#filter1').click(function () {
+				var row = $('table tbody tr:even');
+				if (!row.hasClass('changed')) {
+					row.css('background-color', 'lightblue').addClass('changed');
+					$(this).text("Resetuj kolor wierszy").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					row.css('background-color', '').removeClass('changed');
+					$(this).text("Zmień kolor parzystych wierszy").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#filter2').click(function () {
+				var cell = $('table tbody tr:odd');
+				if (!cell.hasClass('changed')) {
+					cell.fadeTo(1000, 0.5).addClass('changed');
+					$(this).text("Resetuj jasność tekstu").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					cell.fadeTo(1000, 1).removeClass('changed');
+					$(this).text("Zmniejsz jasność nieparzystych wierszy").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#filter3').click(function () {
+				var quote = $('table tbody tr.test:even');
+				if (!quote.hasClass('changed')) {
+					quote.slideToggle(500).addClass('changed');
+					$(this).text("Resetuj wyłączenie").removeClass('btn-success').addClass('btn-danger');
+				} else {
+					quote.slideToggle(500).removeClass('changed');
+					$(this).text("Wyłącz parzyste wiersze, ktore maja klase test").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#filter4').click(function () {
+				var ageCell = $('table tbody tr:first');
+				if (!ageCell.hasClass('changed')) {
+					ageCell.fadeToggle(500).addClass('changed');
+					$(this).text("Resetuj wyłączenie").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					ageCell.fadeToggle(500).removeClass('changed');
+					$(this).text("Wyłącz pierwszy wers").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#filter5').click(function () {
+				var quote = $('table tbody tr').not('.test');
+				if (!quote.hasClass('changed')) {
+					quote.fadeIn(500).addClass('changed');
+					$(this).text("Resetuj pokazywanie wieku").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					quote.fadeOut(500).removeClass('changed');
+					$(this).text("Wylacz wszystkie wiersze, ktore nie maja klasy test").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#filter6').click(function () {
+				var quotes = $('table tbody tr:has(td span)');
+				if (!quotes.hasClass('changed')) {
+					quotes.fadeTo(500, 0.5).addClass('changed');
+					$(this).text("Resetuj przezroczystość").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					quotes.fadeTo(500, 1).removeClass('changed');
+					$(this).text("Zmniejsz przezroczystość o połowę dla wszystkich wierszy z <span>").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+
+			$('#filter7').click(function () {
+				var quotes = $('table tbody tr').filter(function () {
+					return $(this).find('td:contains("Jan")').length > 0;
+				});
+
+				if (!quotes.hasClass('changed')) {
+					quotes.fadeTo(500, 0.3).addClass('changed');
+					$(this).text("Resetuj przezroczystosc").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					quotes.fadeTo(500, 1).removeClass('changed');
+					$(this).text("Zmniejsz przezroczystosc do 1/3 dla kazdego wiersza zawierajacego 'Jan'").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+			$('#filter8').click(function () {
+				//Nie chce dzialac, nie mam pojecia jak to naprawić:(
+				var quotes = $('table tbody tr input:hidden');
+				if (!quotes.hasClass('changed')) {
+					quotes.slideDown(500).addClass('changed');
+					$(this).text("Ukryj elementy").removeClass('btn-primary').addClass('btn-danger');
+				} else {
+					quotes.slideUp(500).removeClass('changed');
+					$(this).text("Pokaż ukryte elementy").removeClass('btn-danger').addClass('btn-primary');
+				}
+			});
+
+
+		});
+	</script>
+
+
+	<footer>
+		<div class="container" style="margin-top: 5%">
+			<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Polityka
+				prywatności</button>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel1">Polityka prywatności</h4>
+				</div>
+				<div class="modal-body">polityka prywatności...</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-warning btn-sm" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="ModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel2">Kontakt</h4>
+				</div>
+				<div class="modal-body">
+					<section id="form" style="margin-top: 5%">
+						<form action="index.html#kontakt" method="post" onsubmit="return checkForm();">
+							<fieldset>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="hide" id="errorName">Podanie imienia jest
+											wymagane!</p>
+									</div>
+								</div>
+								<div class="row" id="success">
+									<div class="col-md-2" align="right">
+										<label class="control-label" for="contactName">Imię</label>
+									</div>
+									<div class="col-md-4">
+										<input type="text" class="form-control " id="contactName"
+											aria-describedby="inputSuccess5Status" onblur="checkName()" />
+										<span class="hide" aria-hidden="true" id="true"></span> <span
+											id="inputSuccess5Status" class="sr-only">(success)</span>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="hide" id="errorLastName">Podanie nazwiska jest
+											wymagane!</p>
+									</div>
+								</div>
+								<div class="row" id="success2">
+									<div class="col-md-2" align="right">
+										<label class="control-label" for="contactLastName">Nazwisko</label>
+									</div>
+									<div class="col-md-4">
+										<input type="text" class="form-control " id="contactLastName"
+											aria-describedby="inputSuccess5Status" onblur="checkLastName()" /> <span
+											class="hide" aria-hidden="true" id="true2"></span> <span
+											id="inputSuccess5Status2" class="sr-only">(success)</span>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="hide" id="errorEmail">Podanie emaila jest
+											wymagane!</p>
+										<p class="hide" id="errorEmail2">Błędny email!</p>
+									</div>
+								</div>
+								<div class="row" id="success3">
+									<div class="col-md-2" align="right">
+										<label class="control-label" for="contactEmail">Email</label>
+									</div>
+									<div class="col-md-4">
+										<input type="text" class="form-control " id="contactEmail"
+											aria-describedby="inputSuccess5Status" onblur="checkEmail()" />
+										<span class="hide" aria-hidden="true" id="true3"></span> <span
+											id="inputSuccess5Status3" class="sr-only">(success)</span>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-2" align="right">
+										<label for="information">Informacje</label>
+									</div>
+									<div class="col-md-4">
+										<textarea name="Informacje" cols="30" rows="7" id="Info"
+											maxlength="250"></textarea>
+									</div>
+								</div>
+								<br>
+								<div class="row ">
+									<div class="col-md-2"></div>
+									<div class="col-md-3">
+										<input class="btn btn-primary" type="submit" value="Wyślij" />
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-warning btn-sm" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/forms.js"></script>
+
+</body>
+
+</html>
