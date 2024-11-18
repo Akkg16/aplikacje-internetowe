@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aplikacje-internetowe/lab7_react/static/css/main.9e6bd009.css",
+    "main.js": "/aplikacje-internetowe/lab7_react/static/js/main.37a1165e.js",
+    "static/js/453.bfff7066.chunk.js": "/aplikacje-internetowe/lab7_react/static/js/453.bfff7066.chunk.js",
+    "index.html": "/aplikacje-internetowe/lab7_react/index.html",
+    "main.9e6bd009.css.map": "/aplikacje-internetowe/lab7_react/static/css/main.9e6bd009.css.map",
+    "main.37a1165e.js.map": "/aplikacje-internetowe/lab7_react/static/js/main.37a1165e.js.map",
+    "453.bfff7066.chunk.js.map": "/aplikacje-internetowe/lab7_react/static/js/453.bfff7066.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e6bd009.css",
+    "static/js/main.37a1165e.js"
+  ]
+}
