@@ -5,14 +5,14 @@ import { Lab7 } from "./pages/Lab7";
 import { Lab8 } from "./pages/Lab8";
 
 export const AppRoutes = () => {
-	return (
-		<Router>
-			<Routes>
-				<Route path="/aplikacje-internetowe/" element={<Home />} />
-				<Route path="/aplikacje-internetowe/Lab7" element={<Lab7 />} />
-				<Route path="/aplikacje-internetowe/Lab8" element={<Lab8 />} />
-				<Route path="/aplikacje-internetowe/*" element={<Strona404 />} />
-			</Routes>
-		</Router>
-	);
+  return (
+    <Router basename="/aplikacje-internetowe"> {/* Dodajemy basename */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/lab7" element={<Lab7 />} />
+        <Route path="/lab8" element={<Lab8 />} />
+        <Route path="*" element={<Strona404 />} />
+      </Routes>
+    </Router>
+  );
 };
