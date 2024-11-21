@@ -8,11 +8,11 @@ export const AppRoutes = () => {
 	return (
 		<Router>
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/Lab7" element={<Lab7 />} />
-				<Route path="/Lab8" element={<Lab8 />} />
-				<Route path="*" element={<Strona404 />} />
+				<Route path="/aplikacje-internetowe/" element={<Home />} />
+				<Route path="/aplikacje-internetowe/Lab7" element={<Lab7 />} />
+				<Route path="/aplikacje-internetowe/Lab8" element={<Lab8 />} />
+				<Route path="/aplikacje-internetowe/*" element={<Strona404 />} />
 			</Routes>
 		</Router>
 	);
-}
+};

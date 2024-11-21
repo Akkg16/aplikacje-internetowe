@@ -11,12 +11,12 @@ export const Home = () => {
 				</p>
 				<div className="flex flex-col gap-4">
 					<a
-						href="/lab7"
+						href="/aplikacje-internetowe/Lab7"
 						className="px-6 py-3 bg-gray-800 rounded-lg font-bold text-lg text-gray-100 hover:bg-gray-700 hover:text-white shadow-lg transition duration-300 transform hover:scale-105">
 						Laboratorium 7
 					</a>
 					<a
-						href="/lab8"
+						href="/aplikacje-internetowe/Lab7"
 						className="px-6 py-3 bg-gray-800 rounded-lg font-bold text-lg text-gray-100 hover:bg-gray-700 hover:text-white shadow-lg transition duration-300 transform hover:scale-105">
 						Laboratorium 8
 					</a>
