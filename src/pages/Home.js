@@ -1,4 +1,5 @@
 import { Layout } from "D:/Github Repos/aplikacje-internetowe/src/templates/Layout.js";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
 	return (
@@ -10,16 +11,16 @@ export const Home = () => {
 					potrzebujesz.
 				</p>
 				<div className="flex flex-col gap-4">
-					<a
-						href="/aplikacje-internetowe/lab7"
+					<Link
+						to="/lab7"
 						className="px-6 py-3 bg-gray-800 rounded-lg font-bold text-lg text-gray-100 hover:bg-gray-700 hover:text-white shadow-lg transition duration-300 transform hover:scale-105">
 						Laboratorium 7
-					</a>
-					<a
-						href="/aplikacje-internetowe/lab8"
+					</Link>
+					<Link
+						to="/lab8"
 						className="px-6 py-3 bg-gray-800 rounded-lg font-bold text-lg text-gray-100 hover:bg-gray-700 hover:text-white shadow-lg transition duration-300 transform hover:scale-105">
 						Laboratorium 8
-					</a>
+					</Link>
 				</div>
 			</div>
 		</Layout>
