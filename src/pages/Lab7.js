@@ -38,7 +38,6 @@ export const Lab7 = () => {
   ];
 
   return (
-    <Layout>
       <div className="">
         <h2 className="text-2xl font-bold pb-4">
           Zadanie 1 - Komponent wielokrotnego użytku
@@ -66,6 +65,5 @@ export const Lab7 = () => {
         </ThemeContext.Provider>
         <FocusInput />
       </div>
-    </Layout>
   );
 };

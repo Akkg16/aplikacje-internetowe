@@ -11,7 +11,6 @@ import IncorrectComponent from "./Lab8/IncorrectComponent.js";
 
 export const Lab8 = () => {
 	return (
-		<Layout>
 			<div className="space-y-6">
             <h2 className="text-2xl font-bold">Zadanie nr 1 - Czysty Kod</h2>
 				<div className="flex flex-row items-center space-x-4 p-6">
@@ -26,6 +25,5 @@ export const Lab8 = () => {
 				<UploadFileComponent />
 				<ChangeStyleComponent />
 			</div>
-		</Layout>
 	);
 };
