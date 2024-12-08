@@ -1,1 +1,0 @@
-"Kacper Kobyłecki # Aplikacje Internetowe" 
