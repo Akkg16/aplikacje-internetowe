@@ -6,7 +6,7 @@ export default function FavoriteMoviePage() {
 				{/* Plakat filmu */}
 				<div className="w-48 h-72 md:w-64 md:h-96 mb-4 md:mb-0 flex items-center justify-center">
 					<img
-						src="/images/movie-poster.jpg"
+						src="./images/movie-poster.jpg"
 						alt="Plakat filmu"
 						className="w-full h-full object-cover rounded-lg shadow-md"
 					/>

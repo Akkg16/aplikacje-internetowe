@@ -23,7 +23,7 @@ export default function AboutPage() {
 			{/* Prawa kolumna: zdjęcie */}
 			<div className="flex-1 flex justify-center items-center">
 				<img
-					src="/images/me.png"
+					src="./images/me.png"
 					alt="Zdjęcie autora"
 					className="rounded-lg shadow-lg w-64 h-64 object-contain"
 				/>
