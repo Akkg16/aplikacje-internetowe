@@ -1,0 +1,43 @@
+/* Nagłówek */
+.header {
+	display: flex;
+	justify-content: space-between; /* Ustawiamy logo po lewej i linki po prawej */
+	align-items: center;
+	padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+	.header {
+		padding: 2rem 10%;
+	}
+}
+
+/* Kontener logo */
+.mainlogo {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	text-decoration: none;
+	color: #ddd6cb;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: 0.1rem;
+	flex: 1; /* Zajmuje całą dostępną przestrzeń po lewej stronie */
+}
+
+/* Tekst logo */
+.logoText {
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ddd6cb;
+	letter-spacing: 0.1rem;
+}
+
+/* Nawigacja */
+.nav {
+	display: flex;
+	gap: 1rem; /* Mniejszy odstęp między linkami */
+	justify-content: flex-end; /* Linki wyrównane do prawej strony */
+	flex: 0; /* Linki nie zajmują nadmiarowej przestrzeni */
+}

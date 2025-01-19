@@ -1,0 +1,63 @@
+/* app/meals/[somePage].module.css */
+
+.mealContainer {
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+	flex-direction: row;
+	gap: 2rem;
+	background-color: #282c34;
+	color: white;
+	border-radius: 8px;
+	margin-top: 12rem;
+}
+
+.mealImageContainer {
+	flex: 1;
+	max-width: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mealImage {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mealDetailsContainer {
+	flex: 1;
+	max-width: 600px;
+}
+
+.mealTitle {
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	color: white;
+}
+
+.mealSummary {
+	font-size: 1.4rem;
+	color: #ccc;
+	margin-bottom: 2rem;
+}
+
+.mealDetails {
+	font-size: 1rem;
+	line-height: 1.6;
+	color: #ddd;
+}
+
+.mealDetails p {
+	margin-bottom: 1rem;
+}
+
+.mealDetails strong {
+	font-weight: bold;
+	color: #f0f0f0;
+}
